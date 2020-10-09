@@ -4,15 +4,15 @@ using namespace std;
 int main()
 {
     int sum = 0;
-    int i, j, cnt;
+    int i, j, c;
 
     for (i = 2; i < 1000; ++i) {
-        cnt = 0;
+        c = 0;
         for (j = 1; j <= i; ++j) {
             if (!(i % j))
-                ++cnt;
+                ++c;
         }
-        if (cnt == 2) {
+        if (c == 2) {
             sum += i;
             cout << i << " ";
         }
